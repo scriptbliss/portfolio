@@ -21,7 +21,7 @@ export default function Home() {
               <span>•</span>
               <span>+91-82788-73471</span>
               <span>•</span>
-              <span>Chandigarh, India</span>
+              <span>Pune, India</span>
             </div>
           </header>
 
@@ -277,7 +277,7 @@ export default function Home() {
                     href="https://bandhan1.scriptbliss.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-blue-600 dark:text-sky-300 hover:underline hover:text-blue-800 dark:hover:text-sky-200"
                   >
                     Live Demo
                   </a>
@@ -285,7 +285,7 @@ export default function Home() {
                     href="https://github.com/matrimony-portal"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-blue-600 dark:text-sky-300 hover:underline hover:text-blue-800 dark:hover:text-sky-200"
                   >
                     GitHub
                   </a>
@@ -309,7 +309,7 @@ export default function Home() {
                     href="https://securepaste.scriptbliss.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-blue-600 dark:text-sky-300 hover:underline hover:text-blue-800 dark:hover:text-sky-200"
                   >
                     Live Demo
                   </a>
@@ -317,7 +317,7 @@ export default function Home() {
                     href="https://github.com/scriptbliss/securepaste"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-blue-600 dark:text-sky-300 hover:underline hover:text-blue-800 dark:hover:text-sky-200"
                   >
                     GitHub
                   </a>
@@ -342,18 +342,37 @@ export default function Home() {
                     href="https://shredtest1.scriptbliss.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-blue-600 dark:text-sky-300 hover:underline hover:text-blue-800 dark:hover:text-sky-200"
                   >
                     Live Demo
                   </a>
+
                   <a
                     href="https://github.com/online-assessment-portal"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                    className="text-blue-600 dark:text-sky-300 hover:underline hover:text-blue-800 dark:hover:text-sky-200"
                   >
                     GitHub
                   </a>
+                </div>
+                <div className="flex gap-3 text-sm text-zinc-700 dark:text-zinc-300">
+                  <p>
+                    <br />
+                    -- LOGIN DETAILS -- <br /> email: sachin.kr.work@gmail.com
+                    <br />
+                    password: Sachin@123
+                  </p>
+                </div>
+                <br />
+                <div className="flex gap-3 text-sm text-zinc-700 dark:text-zinc-300">
+                  <p>
+                    -- PassCodes --
+                    <br />
+                    EHFH557177 <br />
+                    BCHK718831 <br />
+                    ADFJ741738
+                  </p>
                 </div>
               </div>
               <div className="p-6 bg-white dark:bg-zinc-800 rounded-lg shadow-sm">

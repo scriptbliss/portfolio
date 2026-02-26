@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f7f2;
+  --foreground: #1d2a22;
+  --surface: #ffffff;
+  --surface-border: #d4dccf;
+  --accent: #2f6f4f;
+  --accent-strong: #1f5238;
+  --muted: #52645a;
 }
 
 @theme inline {
@@ -12,15 +17,227 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 8%, #dceadf 0%, transparent 42%),
+    radial-gradient(circle at 85% 4%, #ecf3da 0%, transparent 35%),
+    var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), "Avenir Next", "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.hero-copy,
+.contact-card,
+.panel {
+  background: color-mix(in srgb, var(--surface) 92%, #f2f6ee 8%);
+  border: 1px solid var(--surface-border);
+  border-radius: 18px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 20px rgba(45, 68, 56, 0.05);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero-title {
+  margin: 0.45rem 0 0;
+  font-size: clamp(2rem, 5vw, 3.1rem);
+  line-height: 1.06;
+}
+
+.hero-subtitle {
+  margin: 0.75rem 0;
+  font-size: 1.08rem;
+  color: var(--accent-strong);
+  font-weight: 640;
+}
+
+.hero-summary {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.chip-row {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.chip {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid #b7c9bb;
+  background: #edf4ee;
+  color: #274735;
+}
+
+.contact-card h2,
+.section-block h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+}
+
+.contact-card ul,
+.contact-card li,
+.panel ul,
+.panel li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-card ul {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.cta-row {
+  margin-top: 0.9rem;
+  display: grid;
+  gap: 0.48rem;
+}
+
+.cta-row a,
+.link-row a {
+  border: 1px solid #adbfaf;
+  background: #f5faf5;
+  padding: 0.5rem 0.72rem;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  color: var(--accent-strong);
+  font-weight: 600;
+  transition: background 140ms ease, border-color 140ms ease;
+}
+
+.cta-row a:hover,
+.link-row a:hover {
+  background: #e8f3e9;
+  border-color: #7ca788;
+}
+
+.section-block {
+  margin-top: 1rem;
+}
+
+.strength-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stack-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.panel h3 {
+  margin: 0;
+  font-size: 1.04rem;
+}
+
+.panel p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.panel header p {
+  margin-top: 0.28rem;
+  font-size: 0.9rem;
+  color: #4a5e53;
+}
+
+.panel ul {
+  margin-top: 0.58rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.panel li {
+  position: relative;
+  padding-left: 1.05rem;
+  line-height: 1.5;
+  color: #395145;
+}
+
+.panel li::before {
+  content: "";
+  position: absolute;
+  left: 0.17rem;
+  top: 0.58rem;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: #3b825f;
+}
+
+.two-col {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.edu-item + .edu-item {
+  margin-top: 0.85rem;
+}
+
+.meta {
+  color: #486154;
+  font-size: 0.88rem;
+}
+
+.link-row {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-list li {
+  padding-left: 0;
+}
+
+.skill-list li::before {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .hero-grid,
+  .two-col,
+  .strength-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 9vw, 2.6rem);
+  }
 }

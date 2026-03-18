@@ -50,7 +50,8 @@ export default function Home() {
                   Backend Engineer – Trading Automation
                 </h3>
                 <p className="text-zinc-600 dark:text-zinc-400 mb-2">
-                  Sprout Investments • Jan 2023 - Mar 2025 • Chandigarh, India
+                  Independent Backend Engineer • Jan 2023 - Mar 2025 •
+                  Chandigarh, India
                 </p>
                 <ul className="list-disc list-inside text-zinc-700 dark:text-zinc-300 space-y-1">
                   <li>
@@ -274,7 +275,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-3">
                   <a
-                    href="https://bandhan1.scriptbliss.com/"
+                    href="https://bandhan.scriptbliss.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 dark:text-sky-300 hover:underline hover:text-blue-800 dark:hover:text-sky-200"
@@ -339,7 +340,7 @@ export default function Home() {
                 </p>
                 <div className="flex gap-3">
                   <a
-                    href="https://shredtest1.scriptbliss.com/"
+                    href="https://shredtest.scriptbliss.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 dark:text-sky-300 hover:underline hover:text-blue-800 dark:hover:text-sky-200"
